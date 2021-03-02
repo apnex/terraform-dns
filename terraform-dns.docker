@@ -1,0 +1,9 @@
+FROM alpine
+EXPOSE 53/udp
+EXPOSE 953/tcp
+RUN apk add --no-cache \
+	bind \
+	bind-tools \
+	&& chown -R root:root /var
+# Not in use - overidden in k8s manifest
+#ENTRYPOINT ["/bin/sh", "-c", "/usr/sbin/named && tail -f /var/log/named.log"]
