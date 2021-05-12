@@ -11,25 +11,48 @@ variable "dns_key_secret" {
 
 variable "vmw" {
 	default = {
-		zone = "lab01.syd."
+		zone = "lab03.syd."
 		records = [
 			{
-				name = "esx11"
-				addr = "10.30.0.111"
+				name = "vcenter"
+				addr = "10.30.0.130"
 			},
 			{
-				name = "esx12"
-				addr = "10.30.0.112"
+				name = "esx31"
+				addr = "10.30.0.131"
 			},
 			{
-				name = "esx13"
-				addr = "10.30.0.113"
+				name = "esx32"
+				addr = "10.30.0.132"
 			},
 			{
-				name = "esx14"
-				addr = "10.30.0.114"
+				name = "esx33"
+				addr = "10.30.0.133"
+			},
+			{
+				name = "esx34"
+				addr = "10.30.0.134"
+			},
+			{
+				name = "esx35"
+				addr = "10.30.0.135"
+			},
+			{
+				name = "esx36"
+				addr = "10.30.0.136"
+			},
+			{
+				name = "nsxm"
+				addr = "10.30.0.137"
+			},
+			{
+				name = "nsxe"
+				addr = "10.30.0.138"
+			},
+			{
+				name = "avic"
+				addr = "10.30.0.139"
 			}
 		]
 	}
 }
-
