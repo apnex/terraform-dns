@@ -109,6 +109,7 @@ data:
     	allow-query	{ 0.0.0.0/0; };
     	allow-transfer	{ 0.0.0.0/0; };
     	allow-update	{ 0.0.0.0/0; };
+    	allow-recursion { 0.0.0.0/0; };
     	allow-new-zones yes;
     	recursion yes;
     	forwarders {
