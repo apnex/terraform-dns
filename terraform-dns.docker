@@ -1,5 +1,6 @@
 FROM alpine
 EXPOSE 53/udp
+EXPOSE 53/tcp
 EXPOSE 953/tcp
 RUN apk add --no-cache \
 	bind \

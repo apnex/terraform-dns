@@ -113,8 +113,8 @@ data:
     	allow-new-zones yes;
     	recursion yes;
     	forwarders {
-    		8.8.8.4;
-    		8.8.8.8;
+    		10.79.0.132;
+    		10.79.0.133;
     	};
     	dnssec-enable yes;
     	dnssec-validation yes;
@@ -129,15 +129,15 @@ data:
     		print-severity yes;
     		severity debug;
     	};
-    	channel "black" {
-    		file "/var/log/named.black" versions 3 size 5m;
+    	channel "blackhole" {
+    		file "/var/log/named.blackhole" versions 3 size 5m;
     		print-time yes;
     		print-category yes;
     		print-severity yes;
     		severity debug;
     	};
     	category default { default_syslog; };
-    	category general { black; };
+    	category general { blackhole; };
     	category config { default_syslog; };
     	category security { default_syslog; };
     	category resolver { default_syslog; };
@@ -165,7 +165,7 @@ data:
     	file "/var/bind/lab01.one.zone.fwd";
     	forwarders {};
     };
-    zone "0.30.10.in-addr.arpa" {
+    zone "10.16.172.in-addr.arpa" {
     	type master;
     	file "/var/bind/lab01.one.zone.rev";
     	forwarders {};
