@@ -136,19 +136,19 @@ data:
     		print-severity yes;
     		severity debug;
     	};
-    	category default { default_syslog; };
-    	category general { blackhole; };
-    	category config { default_syslog; };
-    	category security { default_syslog; };
-    	category resolver { default_syslog; };
-    	category xfer-in { default_syslog; };
-    	category xfer-out { default_syslog; };
-    	category notify { default_syslog; };
-    	category client { default_syslog; };
-    	category network { default_syslog; };
-    	category update { default_syslog; };
-    	category queries { default_syslog; };
-    	category lame-servers { default_syslog; };
+    	category default	{ default_syslog; };
+    	category general	{ blackhole; };
+    	category config		{ default_syslog; };
+    	category security	{ default_syslog; };
+    	category resolver	{ default_syslog; };
+    	category xfer-in	{ default_syslog; };
+    	category xfer-out	{ default_syslog; };
+    	category notify		{ default_syslog; };
+    	category client		{ default_syslog; };
+    	category network	{ default_syslog; };
+    	category update		{ default_syslog; };
+    	category queries	{ default_syslog; };
+    	category lame-servers	{ default_syslog; };
     };
     controls {   
     	inet * port 953
